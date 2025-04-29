@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/library-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f59e0b" />
+    <meta name="description" content="Knowledge Haven Library - Your gateway to endless discoveries through books and learning" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="color-scheme" content="light dark" />
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Knowledge Haven Library" />
+    <meta property="og:description" content="Your gateway to endless discoveries through books and learning" />
+    <meta property="og:image" content="/library-interior.jpg" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Performance optimizations for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- PWA tags -->
+    <link rel="apple-touch-icon" href="/library-logo-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Knowledge Haven" />
+    
+    <title>Knowledge Haven Library</title>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- Prevent FOUC (Flash of Unstyled Content) -->
+    <script>
+      (function() {
+        document.documentElement.classList.add('js-loading');
+        window.addEventListener('load', function() {
+          document.documentElement.classList.remove('js-loading');
+        });
+      })();
+    </script>
+  </body>
+</html>
